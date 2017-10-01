@@ -29,7 +29,7 @@ def execute_transaction
       sender.balance += self.amount
       self.status = "reversed"
     else self.status = "complete"
-    end 
+    end
   end
 
 end
