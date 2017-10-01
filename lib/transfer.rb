@@ -8,12 +8,12 @@ class Transfer
    @amount = amount
  end
 
+def sender_valid?(sender)
+  if sender.BankAccount
+end
+
 def valid?
-  if BankAccount.valid? == true
-    true
-  else
-    false
-  end
+  self.sender.valid? && self.receiver.valid?
 end
 
 end
