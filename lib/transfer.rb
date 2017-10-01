@@ -14,7 +14,12 @@ def valid?
 end
 
 def execute_transaction
-
+  if self.valid? && self.sender > self.amount
+    sender.balance -= self.amount
+    receiver.balance += self.amount
+  else self.status = "rejected"
+  end
+ 
 end
 
 end
