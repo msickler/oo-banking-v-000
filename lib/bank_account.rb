@@ -25,4 +25,8 @@ def valid?
 end
 end
 
+def close_account
+  self.all.clear
+end
+
 end
