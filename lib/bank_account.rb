@@ -13,4 +13,7 @@ def deposit(money)
   self.balance = @balance + money
 end
 
+def display_balance
+  self.balance
+end
 end
