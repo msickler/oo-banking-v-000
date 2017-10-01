@@ -6,7 +6,14 @@ class Transfer
    @sender = sender
    @receiver = receiver
    @amount = amount
-
  end
+
+def valid? 
+  if BankAccount == true
+    true
+  else
+    false
+  end
+end
 
 end
