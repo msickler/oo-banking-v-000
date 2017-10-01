@@ -6,6 +6,11 @@ class BankAccount
     @name = name
     @balance = balance
     @status = status
+    @account = []
   end
+
+def deposit(money)
+  self.account << money
+end
 
 end
