@@ -6,7 +6,7 @@ class BankAccount
     @name = name
     @balance = balance
     @status = status
-    
+
   end
 
 def deposit(money)
