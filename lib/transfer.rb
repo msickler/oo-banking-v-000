@@ -24,11 +24,11 @@ def execute_transaction
   end
 
   def reverse_transfer
-    if self.execute_transaction == true
+    if self.status == "complete"
       receiver.balance -= self.amount
       sender.balance += self.amount
       self.status = "reversed"
-    else self.status = "complete"
+    else "unable to comply."
     end
   end
 
